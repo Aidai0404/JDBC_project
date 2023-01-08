@@ -1,6 +1,7 @@
 package com.peaksoft;
 
 
+import com.peaksoft.dao.UserDaoHibernateImpl;
 import com.peaksoft.service.UserServiceImpl;
 
 public class App
@@ -15,5 +16,15 @@ public class App
 //        userService.removeUserById(2);
 //       System.out.println(userService.getAllUsers());
 //        userService.cleanUsersTable();
+        UserDaoHibernateImpl userDaoHibernate = new UserDaoHibernateImpl();
+       // userDaoHibernate.createUsersTable();
+       // userDaoHibernate.dropUsersTable();
+//        userDaoHibernate.saveUser("Aidai",
+//                "Mamatbekova",
+//                (byte)18);
+        // userDaoHibernate.removeUserById(1);
+        System.out.println( userDaoHibernate.getAllUsers());
+
+
     }
 }
